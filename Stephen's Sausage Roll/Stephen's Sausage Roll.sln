@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stephen's Sausage Roll", "Stephen's Sausage Roll.csproj", "{6ED8FB7A-1801-9259-9842-66A5D2886B6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stephen's Sausage Roll.Editor", "Stephen's Sausage Roll.Editor.csproj", "{CFA7BCCB-A438-AFD6-9A97-513DC02771EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6ED8FB7A-1801-9259-9842-66A5D2886B6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ED8FB7A-1801-9259-9842-66A5D2886B6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ED8FB7A-1801-9259-9842-66A5D2886B6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ED8FB7A-1801-9259-9842-66A5D2886B6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFA7BCCB-A438-AFD6-9A97-513DC02771EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFA7BCCB-A438-AFD6-9A97-513DC02771EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFA7BCCB-A438-AFD6-9A97-513DC02771EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFA7BCCB-A438-AFD6-9A97-513DC02771EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
