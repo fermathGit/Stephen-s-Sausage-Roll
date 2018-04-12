@@ -2,19 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
-using System;
 
-public class Boat : Entity
-{
+public class Sausage : Entity {
     protected override void Init()
     {
         ActionMgr.Instance.Init();
 
         base.Init();
-        _easeType = Ease.InCirc;
+        _easeType = Ease.InBack;
     }
 
-    protected override void DoUpdate()
+    protected override void DoLateUpdate()
     {
         base.DoUpdate();
 
@@ -43,15 +41,5 @@ public class Boat : Entity
                 SetMyPos(_x + h, _y + v);
             }
         }
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            PressOnZZZZZ();
-        }
     }
-
-    void PressOnZZZZZ()
-    {
-        ActionMgr.Instance.ResetLastStep();
-    }
-
 }
