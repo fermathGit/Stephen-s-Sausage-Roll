@@ -2,6 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using PublicComDef;
+using LBGame;
+using LBDownLoad;
 
 public sealed class Client : MonoBehaviour
 {
@@ -43,11 +46,14 @@ public sealed class Client : MonoBehaviour
         //Instantiate(Resources.Load("Prefabs/Sausage"), transform);
 
         RttMgr.Instance.Init();
+        GameAssetsMgr.Instance.Init();
+        DownLoadMgr.Instance.Init();
+        PoolMgr.Instance.Init();
 
         RttEntity.RttData data = new RttEntity.RttData();
         data.Width = 500;
         data.Height = 500;
-        data.Res = "Prefabs/ruoshui";
+        data.Res = "file:///" + Application.streamingAssetsPath + "/" + "ruoshui.unity3d";
         data.Pos = new Vector3(0.15f, -1.66f, 2.24f);
         data.Euler = new Vector3(0, 180, 0);
         data.Scale = Vector3.one;
@@ -59,7 +65,8 @@ public sealed class Client : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        _fsm.Update();
+        PoolMgr.Instance.Update();
     }
 
     public void ChangeFsmState(IFSMState<Client> state)

@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: PEWater_Medium
+  m_Shader: {fileID: 4800000, guid: 0c2197d009567f146a9d0c4705af5e12, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 7ab3684922ef6514daf12627936fca8f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FoamTex:
+        m_Texture: {fileID: 2800000, guid: f04f05803e6bb17408d3b7e87cb3dde3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseMap:
+        m_Texture: {fileID: 2800000, guid: 051356a0c26ddbd40a181eb83ec02f91, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormMap:
+        m_Texture: {fileID: 2800000, guid: 051356a0c26ddbd40a181eb83ec02f91, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectionTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _PLEdgeAtten: 0.5
+    - _PLIntensity2: 0
+    - _PLIntensity3: 0
+    - _PLRange2: 10
+    - _PLRange3: 10
+    - _PointLightK: 0.01
+    - _PointLightRange: 10
+    - _ReflectionBlend: 0.611003
+    - _ReflectionTint: 0
+    - _RefractionAmt: 446.42865
+    - _SLCosCutoff1: 0.3
+    - _SLIntensity1: 1
+    - _SLRange1: 10
+    - _Shininess: 70
+    - _SpotExp: 2
+    - _Tile: 0.05
+    m_Colors:
+    - _BumpDirection: {r: 1, g: 1, b: -1, a: 1}
+    - _BumpTiling: {r: 1, g: 1, b: -2, a: 3}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color0: {r: 0, g: 0.15740371, b: 0.2352941, a: 1}
+    - _Color1: {r: 0.8161765, g: 0.8161765, b: 0.8161765, a: 0}
+    - _Color2: {r: 0, g: 0.5225491, b: 0.7647059, a: 1}
+    - _Color3: {r: 0.4673984, g: 0.6023417, b: 0.6691177, a: 1}
+    - _DensityParams: {r: 0.02, g: 0.1, b: 0, a: 0}
+    - _DepthColor: {r: 0, g: 0.08627451, b: 0.16078432, a: 1}
+    - _Foam: {r: 15, g: 1, b: 5, a: 1.5}
+    - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
+    - _FoamParams: {r: 12, g: 0.2, b: 0.15, a: 0.9}
+    - _FresnelColor: {r: 0.2509804, g: 0.45490196, b: 0.6901961, a: 1}
+    - _InvFadeParemeter: {r: 0.9, g: 0.25, b: 0.5, a: 0.08}
+    - _PLColor1: {r: 0, g: 0, b: 0, a: 1}
+    - _PLColor2: {r: 0, g: 0, b: 0, a: 1}
+    - _PLColor3: {r: 1, g: 1, b: 1, a: 1}
+    - _PLParam1: {r: 0, g: 0, b: 0, a: 0}
+    - _PLParam2: {r: 0, g: 0, b: 0, a: 0}
+    - _PLPos1: {r: 0, g: 0, b: 0, a: 0}
+    - _PLPos2: {r: 0, g: 0, b: 0, a: 0}
+    - _PLPos3: {r: 0, g: 0.1, b: -0.5, a: 0}
+    - _Paremeters1: {r: 0.02, g: 0.1, b: 0, a: 0}
+    - _PointAtten: {r: 0, g: 0.1, b: -0.5, a: 0}
+    - _PointLightPos: {r: 0, g: 0.1, b: -0.5, a: 0}
+    - _ReflectionColor: {r: 0, g: 0.1882353, b: 0.49411765, a: 1}
+    - _SLColor1: {r: 1, g: 1, b: 1, a: 1}
+    - _SLDir1: {r: 0, g: 0.1, b: -0.5, a: 0}
+    - _SLPos1: {r: 0, g: 0.1, b: -0.5, a: 0}
+    - _Specular: {r: 0.9573934, g: 0.8672858, b: 0.57443607, a: 0.9573934}
+    - _WorldLightDir: {r: -0.6525278, g: -0.6042119, b: -0.45731324, a: 0}

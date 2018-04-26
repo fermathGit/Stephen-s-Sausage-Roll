@@ -50,14 +50,23 @@ public sealed class RttMgr : Singleton<RttMgr>
             _rttList[i].Clear();
         }
     }
-
-
+    
     public void GreateRTT(UITexture texture, RttEntity.RttData data)
     {
+        string name = (data.Res.Split('/')[data.Res.Split('/').Length - 1]).Replace(".unity3d", "");
+        string path = data.Res;
+        LBDownLoad.GameAssetsMgr.Instance.GetGameObjAsync(name, path, EResourceType.audio, delegate (GameObj obj)
+        {
+            CallBack(obj, data, texture);
+        });
+    }
+    
+    private void CallBack(GameObj go, RttEntity.RttData data, UITexture texture)
+    {
         RttEntity rtt = GetRTT();
-        var go = Client.Instance.LoadResMgr.LoadResource(data.Res);
-        rtt.Create(go, data);
-
+        if (go != null) {
+            rtt.Create(go.Go, data);
+        }
         texture.mainTexture = rtt.MainTexture;
     }
 }
